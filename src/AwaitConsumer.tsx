@@ -81,12 +81,12 @@ export function AwaitConsumer(props: AwaitConsumerProps & HTMLProps) {
             key={controller?.state ?? AwaitState.STANDBY}
             classNames={
               animationClassName ??
-              state.defaultAnimationClassName ??
+              state?.defaultAnimationClassName ??
               defaultAnimationClassName
             }
             timeout={
               animationDuration ??
-              state.defaultAnimationDuration ??
+              state?.defaultAnimationDuration ??
               defaultAnimationDuration
             }
             unmountOnExit
